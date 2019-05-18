@@ -1,0 +1,8 @@
+name: CmdDemo
+main: com.xuchaoji.spigot.commanddemo.CmdDemo
+version: 1.0
+api-version: 1.13
+commands: 
+    cjcmd: 
+        description: CmdDemo command, give player 10bread and 2diamond
+        usage: /cjcmd
