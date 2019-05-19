@@ -14,6 +14,7 @@ public class CmdDemo extends JavaPlugin {
 		getServer().getConsoleSender().sendMessage(ChatColor.AQUA+"[CmdDemo]cjcmd命令注册成功！");
 		//注册事件监听器
 		getServer().getPluginManager().registerEvents(new ListenerDemo(), this);
+		getServer().getConsoleSender().sendMessage(ChatColor.AQUA+"[CmdDemo]事件监听器注册成功！");
 	}
 	//停用插件执行
 	@Override
