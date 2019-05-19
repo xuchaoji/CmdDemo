@@ -9,8 +9,11 @@ public class CmdDemo extends JavaPlugin {
 	@Override
 	public void onEnable() {
 		getServer().getConsoleSender().sendMessage(ChatColor.AQUA+"[CmdDemo]已加载");
+		//注册cjcmd这个命令
 		this.getCommand("cjcmd").setExecutor(new CjCmd());
 		getServer().getConsoleSender().sendMessage(ChatColor.AQUA+"[CmdDemo]cjcmd命令注册成功！");
+		//注册事件监听器
+		getServer().getPluginManager().registerEvents(new ListenerDemo(), this);
 	}
 	//停用插件执行
 	@Override
